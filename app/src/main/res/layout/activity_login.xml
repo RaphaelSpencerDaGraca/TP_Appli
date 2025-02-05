@@ -32,6 +32,15 @@
 
     <!-- Lien vers Inscription -->
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indentifiez-vous"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="15dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
