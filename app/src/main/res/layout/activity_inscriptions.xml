@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Créer un compte"
+        android:text="@string/CréerUnCompte"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Créer un nouveau compte"
+        android:text="@string/CréerUnNouveauCompte"
         android:textSize="17sp"
         android:textStyle="bold"
         android:layout_weight="0.1"
@@ -38,7 +38,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -52,7 +53,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Prénom"
+            android:hint="@string/prenom"
             android:layout_marginLeft="25dp"
             android:layout_weight="0.1"
             android:layout_marginRight="15dp"/>
@@ -60,20 +61,20 @@
     </LinearLayout>
 
 
-
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nom"
         android:layout_marginLeft="50dp"
-        android:layout_weight="0.1"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+
+        android:hint="@string/nom" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -87,10 +88,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="E-mail"
+            android:hint="@string/e_mail"
             android:layout_marginLeft="25dp"
             android:layout_weight="0.1"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            />
 
     </LinearLayout>
 
@@ -98,7 +100,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -106,15 +109,16 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="-10dp"
-            android:src="@drawable/baseline_lock_24" />
+            android:src="@drawable/baseline_block_24" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
+            android:hint="@string/motdepasse"
             android:layout_marginLeft="25dp"
             android:layout_weight="0.1"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            />
 
     </LinearLayout>
 
@@ -123,23 +127,39 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Icone de téléphone -->
+
+        <!-- Spinner -->
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Phone Icon"
+            android:src="@drawable/baseline_local_phone_24"
+            android:layout_marginStart="-6dp"/>
 
         <Spinner
-            android:id="@+id/spinner_example"
-            android:layout_width="0dp"
+            android:id="@+id/spinner_prefix"
+            android:layout_width="3dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:spinnerMode="dropdown"
-            android:layout_marginEnd="8dp" />
+            android:spinnerMode="dropdown" />
 
+        <!-- Champ Mobile -->
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Mobile"
             android:layout_weight="2"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="15dp"/>
+            android:hint="Mobile"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+           />
     </LinearLayout>
 
 
@@ -148,7 +168,7 @@
         android:layout_height="wrap_content"
 
         android:background="@drawable/button"
-        android:text="Créer"
+        android:text="@string/créer"
 
 
         android:textColor="@color/white"

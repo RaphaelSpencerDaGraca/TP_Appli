@@ -15,7 +15,7 @@
         android:background="@color/black"
         android:drawableLeft="@drawable/baseline_arrow_back_24"
         android:gravity="center"
-        android:text="Connectez-vous"
+        android:text="@string/ConnectezVous"
 
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -35,10 +35,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Indentifiez-vous"
+        android:text="@string/IdentifiezVous"
         android:textSize="18sp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="-50dp"
+        android:layout_marginBottom="-70dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/gray"/>
 
@@ -47,6 +47,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
         >
 
         <ImageView
@@ -86,22 +87,21 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
+            android:hint="@string/motdepasse"
             android:layout_marginLeft="25dp"
             android:layout_weight="0.1"
             android:layout_marginRight="15dp"/>
 
     </LinearLayout>
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MOT DE PASSE OUBLIÉ ?"
         android:layout_marginLeft="250dp"
         android:layout_marginTop="25dp"
-        android:textColor="@android:color/holo_blue_dark"
-        />
-
+        android:text="@string/MotDePasseOublie"
+        android:textColor="@android:color/holo_blue_dark" />
 
     <Button
         android:id="@+id/btn_login"
@@ -110,7 +110,7 @@
         android:backgroundTint="@color/green"
         android:layout_marginTop="20dp"
         android:paddingTop="7dp"
-        android:text="Connectez-vous"
+        android:text="@string/ConnectezVous"
         android:background="@drawable/button"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -128,7 +128,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nouveau sur Jumia ? "
+            android:text="@string/NouveauJumia"
             android:padding="8dp"/>
 
         <TextView
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
-            android:text="CRÉÉ UN COMPTE"
+            android:text="@string/CREEUNCOMPTE"
             android:textColor="@android:color/holo_blue_dark"
             android:padding="8dp"/>
     </LinearLayout>
@@ -147,7 +147,8 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp">
 
         <View
 
@@ -159,7 +160,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OU"
+            android:text="@string/OU"
 
             android:padding="8dp"
             android:gravity="center" />
@@ -191,7 +192,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continuer avec Facebook"
+            android:text="@string/ContinuerFacebook"
             android:textColor="@android:color/holo_blue_dark"
             android:gravity="center_vertical"
            />

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-   >
+    >
 
     <!-- En-tête -->
     <TextView
@@ -14,8 +14,7 @@
         android:background="@color/black"
         android:drawableLeft="@drawable/baseline_arrow_back_24"
         android:gravity="center"
-        android:text="Connectez-vous"
-
+        android:text="@string/ConnectezVous"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -39,12 +38,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Identifiez-vous"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:layout_marginLeft="35dp"
                 android:layout_marginBottom="16dp"
+                android:text="@string/IdentifiezVous"
                 android:textColor="@color/gray"
-                android:paddingLeft="30dp"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <!-- Champ Email -->
             <LinearLayout
@@ -52,14 +51,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/edittext_background"
                 android:padding="8dp"
                 android:layout_marginBottom="16dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/baseline_local_post_office_24"
+                    android:src="@drawable/baseline_attach_email_24"
                     android:contentDescription="Email Icon" />
 
                 <EditText
@@ -79,20 +77,19 @@
                 android:gravity="center_vertical"
                 android:background="@drawable/edittext_background"
                 android:padding="8dp"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="25dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/baseline_lock_24"
-                    android:contentDescription="Password Icon"
-                    />
+                    android:src="@drawable/baseline_block_24"
+                    android:contentDescription="Password Icon" />
 
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="Mot de passe"
+                    android:hint="@string/motdepasse"
                     android:paddingLeft="8dp"
                     android:inputType="textPassword" />
             </LinearLayout>
@@ -101,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MOT DE PASSE OUBLIÉ ?"
+                android:text="@string/MotDePasseOublie"
                 android:textColor="@android:color/holo_blue_dark"
                 android:layout_gravity="end"
                 android:layout_marginBottom="16dp" />
@@ -111,14 +108,13 @@
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CONNECTEZ-VOUS"
+                android:text="@string/ConnectezVous"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/orange"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/button"/>
-
         </LinearLayout>
 
         <!-- Ligne de séparation verticale avec "OU" -->
@@ -139,8 +135,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OU"
-
+                android:text="@string/OU"
                 android:padding="8dp"
                 android:gravity="center" />
 
@@ -150,7 +145,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/gray" />
-
         </LinearLayout>
 
         <!-- Colonne droite -->
@@ -165,16 +159,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nouveau sur Jumia ?"
+                android:text="@string/NouveauJumia"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="100dp"
-                />
+                android:layout_marginTop="100dp" />
 
             <!-- Lien Créer un compte -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CRÉEZ UN COMPTE"
+                android:text="@string/CREEUNCOMPTE"
                 android:textColor="@android:color/holo_blue_dark"
                 android:layout_marginBottom="16dp"
                 android:clickable="true"
@@ -191,18 +184,15 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/facebook_icon"
-
                     android:contentDescription="Facebook Icon"
                     android:layout_marginRight="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Continuer avec Facebook"
+                    android:text="@string/ContinuerFacebook"
                     android:textColor="@android:color/holo_blue_dark"/>
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>
