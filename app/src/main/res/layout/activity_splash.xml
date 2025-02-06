@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@drawable/background_gradient"
     tools:context=".SplashActivity">
 
     <TextView
@@ -15,7 +15,8 @@
         android:textAlignment="center"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="239dp" />
+        tools:layout_editor_absoluteY="239dp"
+        android:textSize="36sp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -25,16 +26,16 @@
 
 
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="383dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="471dp" />
 
     <ImageView
         android:layout_width="91dp"
         android:layout_height="87dp"
-        android:src="@drawable/img"
         android:scaleType="fitCenter"
+        android:src="@drawable/baseline_assured_workload_24"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="273dp" />
+        tools:layout_editor_absoluteY="337dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,7 +42,9 @@
                 android:text="Identifiez-vous"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/gray"
+                android:paddingLeft="30dp"/>
 
             <!-- Champ Email -->
             <LinearLayout
@@ -128,11 +130,11 @@
             android:layout_marginHorizontal="16dp">
 
             <View
-                android:layout_marginTop="10dp"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@color/black" />
+                android:background="@color/gray" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -147,7 +149,7 @@
                 android:layout_width="1dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@color/black" />
+                android:background="@color/gray" />
 
         </LinearLayout>
 
@@ -196,7 +198,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Continuer avec Facebook" />
+                    android:text="Continuer avec Facebook"
+                    android:textColor="@android:color/holo_blue_dark"/>
             </LinearLayout>
         </LinearLayout>
 
