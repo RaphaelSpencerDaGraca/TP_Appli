@@ -13,11 +13,14 @@
         android:theme="@style/Theme.PowerHome"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".loginPaysage"
             android:exported="false" />
         <activity
-            android:name=".inscriptions"
-            android:exported="true">
+            android:name=".InscriptionsActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,13 +29,14 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true"/>
+
         <activity
             android:name=".SplashActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">PowerHome</string>
     <string name="e_mail">E-mail</string>
-    <string name="motdepasse">motdepasse</string>
+    <string name="motdepasse">Mot de passe</string>
     <string name="se_connecter">Se connecter</string>
     <string name="prenom">Prénom</string>
     <string name="nom">Nom</string>
